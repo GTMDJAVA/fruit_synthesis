@@ -298,7 +298,7 @@ export class GameManager extends Component {
         if (isAnyFruitAboveLine) {
             this._gameOverTimer += dt;
             // 如果状态持续超过 1.0 秒，触发游戏结束
-            if (this._gameOverTimer > 1.0) {
+            if (this._gameOverTimer > 0.5) {
                 console.log("[GameManager] Game Over: Fruit stack reached death line.");
                 this.gameOver();
             }
